@@ -2,9 +2,7 @@
     "name": "rideron89/storedge-sdk-php",
     "description": "Guzzle client wrapper for Storedge API",
     "require": {
-        "guzzlehttp/guzzle": "^6.2.1"
-    },
-    "require": {
+        "guzzlehttp/guzzle": "^6.2.1",
         "guzzlehttp/oauth-subscriber": "0.3.*"
     },
     "autoload": {
