@@ -43,9 +43,14 @@ class SDK {
       //Generate OAuth1.0 handler
         $stack = HandlerStack::create();
 
+        // `token_secret` below is added to fix an issue with signing via HMAC
+        // without setting a `token_secret`.
+        // Details: https://github.com/guzzle/oauth-subscriber/pull/49
+
         $middleware = new Oauth1([
           'consumer_key'    => $this->api_key,
-          'consumer_secret' => $this->api_secret
+          'consumer_secret' => $this->api_secret,
+          'token_secret'    => ''
         ]);
         $stack->push($middleware);
 
