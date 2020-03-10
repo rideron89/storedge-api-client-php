@@ -1,5 +1,5 @@
 {
-    "name": "rednovalabs/storedge-sdk-php",
+    "name": "rideron89/storedge-sdk-php",
     "description": "Guzzle client wrapper for Storedge API",
     "require": {
         "guzzlehttp/guzzle": "^6.2.1"
@@ -16,6 +16,10 @@
         {
             "name": "Varun Chadha",
             "email": "vchadha@rednovalabs.com"
+        },
+        {
+            "name": "Ron Rider Jr.",
+            "email": "rrider@propertyfirstgroup.com"
         }
     ],
     "minimum-stability": "stable"
